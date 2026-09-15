@@ -1,0 +1,11 @@
+# Secrets
+.env
+*.local
+
+# Vendor & dependencies
+vendor/
+composer.lock
+
+# Logs
+*.log
+error_log
