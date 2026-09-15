@@ -39,9 +39,9 @@ CREATE TABLE IF NOT EXISTS plans (
 -- Seed FaceAI Plans
 INSERT INTO plans (id, name, price_inr, price_usd, billing_period, max_employees, has_multi_face, has_liveness, has_geofencing, has_erp_integration, has_multi_site)
 VALUES 
-('starter_monthly', 'Starter', 1.00, 1.00, 'monthly', 50, FALSE, FALSE, FALSE, FALSE, FALSE),
-('pro_monthly', 'Professional', 5.00, 5.00, 'monthly', 500, TRUE, TRUE, TRUE, FALSE, FALSE),
-('enterprise_monthly', 'Enterprise', 10.00, 10.00, 'monthly', -1, TRUE, TRUE, TRUE, TRUE, TRUE)
+('starter_monthly', 'Starter', 9471.00, 99.00, 'monthly', 50, FALSE, FALSE, FALSE, FALSE, FALSE),
+('pro_monthly', 'Professional', 28605.00, 299.00, 'monthly', 500, TRUE, TRUE, TRUE, FALSE, FALSE),
+('enterprise_monthly', 'Enterprise', 76440.00, 799.00, 'monthly', -1, TRUE, TRUE, TRUE, TRUE, TRUE)
 ON DUPLICATE KEY UPDATE 
     name = VALUES(name),
     price_inr = VALUES(price_inr),

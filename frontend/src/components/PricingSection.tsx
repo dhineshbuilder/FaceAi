@@ -21,8 +21,8 @@ const PLANS: Plan[] = [
   {
     id: 'starter_monthly',
     name: 'Starter',
-    inr: 1,
-    usd: 1,
+    inr: 9471,
+    usd: 99,
     description: 'Perfect for small teams and startups with basic attendance needs.',
     features: [
       'Up to 50 Employees',
@@ -36,8 +36,8 @@ const PLANS: Plan[] = [
   {
     id: 'pro_monthly',
     name: 'Professional',
-    inr: 5,
-    usd: 5,
+    inr: 28605,
+    usd: 299,
     description: 'For growing businesses that need advanced biometric features & anti-fraud.',
     badge: 'RECOMMENDED',
     recommended: true,
@@ -54,8 +54,8 @@ const PLANS: Plan[] = [
   {
     id: 'enterprise_monthly',
     name: 'Enterprise',
-    inr: 10,
-    usd: 10,
+    inr: 76440,
+    usd: 799,
     description: 'Scalable solutions for large enterprises, multi-branch firms & retail chains.',
     features: [
       'Unlimited Employees',

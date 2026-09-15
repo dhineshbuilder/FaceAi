@@ -1,9 +1,9 @@
 import { NextResponse } from 'next/server';
 
 const PLANS_DATA: Record<string, { name: string; inr: number; usd: number; max_emp: number }> = {
-  starter_monthly: { name: 'Starter', inr: 1, usd: 1, max_emp: 50 },
-  pro_monthly: { name: 'Professional', inr: 5, usd: 5, max_emp: 500 },
-  enterprise_monthly: { name: 'Enterprise', inr: 10, usd: 10, max_emp: -1 },
+  starter_monthly: { name: 'Starter', inr: 9471, usd: 99, max_emp: 50 },
+  pro_monthly: { name: 'Professional', inr: 28605, usd: 299, max_emp: 500 },
+  enterprise_monthly: { name: 'Enterprise', inr: 76440, usd: 799, max_emp: -1 },
 };
 
 export async function POST(req: Request) {
