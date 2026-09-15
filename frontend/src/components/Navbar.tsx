@@ -1,13 +1,13 @@
 'use client';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Shield, Sparkles, LayoutDashboard, Terminal } from 'lucide-react';
+import { Shield, Sparkles, LayoutDashboard, PhoneCall } from 'lucide-react';
 
 export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Brand Logo */}
         <Link href="/" className="flex items-center gap-3 group">
@@ -42,16 +42,16 @@ export default function Navbar() {
             }`}
           >
             <LayoutDashboard className="w-3.5 h-3.5" />
-            Subscriber Portal
+            Control Deck
           </Link>
           <Link
-            href="/simulator"
+            href="/contact"
             className={`px-4 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition ${
-              pathname === '/simulator' ? 'bg-white text-blue-600 shadow-sm font-bold' : 'text-slate-600 hover:text-slate-900'
+              pathname === '/contact' ? 'bg-white text-blue-600 shadow-sm font-bold' : 'text-slate-600 hover:text-slate-900'
             }`}
           >
-            <Terminal className="w-3.5 h-3.5" />
-            Laptop Test Simulator
+            <PhoneCall className="w-3.5 h-3.5" />
+            Contact Us
           </Link>
         </nav>
 
